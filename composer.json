@@ -1,0 +1,26 @@
+{
+    "name": "mist",
+    "description": "Experimental mvc based php framework",
+    "license": "MIT",
+    "keywords": ["mvc based php framework"],
+    "authors": [
+        {
+            "name": "Abdul Wahid",
+            "email": "awahid@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpmd/phpmd": "dev-master",
+        "squizlabs/php_codesniffer": "dev-master",
+        "fabpot/php-cs-fixer": "dev-master",
+        "apigen/apigen": "^4.1",
+        "phpunit/phpunit-skeleton-generator": "dev-master",
+        "phpunit/phpunit": "4.0.*"
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Mist\\": "src/Mist"
+        }
+    }
+}
