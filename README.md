@@ -1,2 +1,2 @@
 # Mist
-Experimental mvc based php framework
+Experimental mvc based PHP Framework. 
