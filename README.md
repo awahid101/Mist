@@ -1,6 +1,6 @@
 # Mist
-Experimental mvc based PHP Framework. 
+Experimental mvc based php framework
 
-#TODO
+#TODO List
 upload demo
 improve the framework
