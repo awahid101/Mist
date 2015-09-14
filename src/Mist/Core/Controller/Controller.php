@@ -35,13 +35,26 @@ abstract class Controller
         $this->view->setLayout($layoutName);
     }
     
+    /**
+     * setView
+     * 
+     * setView function overrides the default view
+     * 
+     * @param string $viewName
+     * @return void
+     */
+    
     protected function setView($viewName) 
     {
         $this->view->setView($viewName);
     }
     
     /**
+     * render
+     * 
+     * render function displays the view.
      * Question Time: What if I use desctructor to render the view?
+     * @return void
      */
     protected function render() 
     {
