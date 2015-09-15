@@ -17,6 +17,17 @@ abstract class Controller
     protected $action;
     protected $view;
             
+ /**
+  * constructor
+  * 
+  * This is a main controller class that needs to be extended by all application controllers.
+  * 
+  * @param string $controller we must have crontroller a name. 
+  * @param string $action by default the action is index function.
+  * @param array $params list of parameters that will be passed to view class and are accessible in view.
+  * 
+  * @return void
+  */
     function __construct($controller, $action = 'index', $params = array()) 
     {    
         $this->controller = $controller;
