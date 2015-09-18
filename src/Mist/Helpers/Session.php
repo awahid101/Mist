@@ -18,7 +18,11 @@ class Session
     private static $sessionStarted = false;
 
     /**
+     * init
+     * 
      * if session has not started, start sessions
+     * 
+     * @return void
      */
     public static function init()
     {
@@ -30,9 +34,13 @@ class Session
     }
 
     /**
+     * set
      * Add value to a session
+     * 
      * @param string $key   name the data to save
      * @param string $value the data to save
+     * 
+     * @return void
      */
     public static function set($key, $value = false)
     {
@@ -111,6 +119,8 @@ class Session
 
     /**
      * empties and destroys the session
+     * 
+     * @return void
      */
     public static function destroy($key = '')
     {
