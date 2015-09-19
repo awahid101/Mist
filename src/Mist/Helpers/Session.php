@@ -133,11 +133,12 @@ class Session
             }
         }
     }
-
-    /**
-     * display message
-      * @return string return the message inside div
-     */
+/**
+ * static function message
+ *  * 
+ * @param string $sessionName pull the session
+ * @return string or void
+ */
     public static function message($sessionName = 'success')
     {
         $msg = Session::pull($sessionName);
