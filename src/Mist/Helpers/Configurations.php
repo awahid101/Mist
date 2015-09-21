@@ -11,19 +11,26 @@ namespace Mist\Helpers;
  */
 
 class Configurations {
-/**
- * conf
- * 
- * @access private
- * @static
- * @var mixed  
- */
+
+    /**
+     * conf
+     * 
+     * @access private
+     * @static
+     * @var mixed  
+     */
     private static $conf;
 
+    /**
+     * 
+     */
     private function __construct() {
         
     }
 
+    /**
+     * 
+     */
     private function __clone() {
         
     }
