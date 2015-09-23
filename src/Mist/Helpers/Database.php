@@ -22,8 +22,11 @@ class Database extends PDO
     protected static $instance = null;
 
     /**
+     * getInstance
+     * 
      * Static method get
      *
+     * @static
      * @return instance of database
      */
     public static function getInstance() 
