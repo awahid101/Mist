@@ -21,7 +21,10 @@ abstract class Model
     protected $modelName;
 
     /**
+     * Constructor
      * create a new instance of the database helper
+     * @param string $tableName stores a table name
+     * @return void 
      */
 
     public function __construct($tableName) 
@@ -33,7 +36,9 @@ abstract class Model
     }
 
     /**
-     * 
+     * findAll
+     * select all records from the table 
+     * @return object returns the fetched results in form of object
      */
 
     public function findAll() 
