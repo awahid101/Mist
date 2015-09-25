@@ -41,6 +41,7 @@ class Database extends PDO
             $port = Configurations::getConf("db")["port"];
             $charset = Configurations::getConf("db")["charset"];
 
+            //through an error and die
             try {
                 $options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
                 self::$instance = new Database("{$type}:host={$host};port={$port};dbname={$name};charset={$charset}", $user, $pass, $options);
