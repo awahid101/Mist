@@ -49,6 +49,12 @@ abstract class Model
         return $stmt->fetchAll(Database::FETCH_CLASS | Database::FETCH_PROPS_LATE, $this->modelName);
     }
 
+    /**
+     * find
+     * returns a record by matching id.
+     * @param int $id
+     * @return object returns table records from the database
+     */
     public function find($id) 
     {
 
