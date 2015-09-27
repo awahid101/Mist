@@ -19,10 +19,15 @@ class Router
     private $path;
     private $controller;
     private $action;
-
+/**
+ * Constructor
+ * 
+ * @param string $path
+ * @param string $controller
+ * @param string $action
+ */
     public function __construct($path = 'app', $controller = 'Welcome', $action = 'index')
     {
-
         $this->path = $path;
         $this->controller = ucfirst($controller);
         $this->action = $action; //case sensitive; should have camelCase
