@@ -3,7 +3,7 @@
  * index.php - invoke the framework
  *
  * @author Abdul Wahid - awahid@gmail.com
- * @version 0.1
+ * @version 1.0.0
  * @date June 15th, 2015
  */
 

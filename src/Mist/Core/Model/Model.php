@@ -9,7 +9,7 @@ use Mist\Helpers\Configurations;
  * Model - Application base Model class
  *
  * @author Abdul Wahid - awahid@gmail.com
- * @version 0.1
+ * @version 1.0.0
  * @date June 18th, 2015
  */
 

@@ -9,7 +9,7 @@ use PDO;
  * database Helper - extending PDO to use custom methods
  *
  * @author Abdul Wahid - awahid@gmail.com
- * @version 0.1
+ * @version 1.0.0
  * @date June 18, 2015
  */
 

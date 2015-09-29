@@ -9,7 +9,7 @@ use Mist\Core\Controller\Error;
  * Router - call relevent controllers and actions
  *
  * @author Abdul Wahid - awahid@gmail.com
- * @version 0.1
+ * @version 1.0.0
  * @date June 15th, 2015
  */
 

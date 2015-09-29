@@ -3,7 +3,7 @@
  * config - main configuration for the application
  *  * 
  * @author Abdul Wahid - awahid@gmail.com
- * @version 0.1
+ * @version 1.0.0
  * @date June 15, 2015
  */
 

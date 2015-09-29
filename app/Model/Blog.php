@@ -6,7 +6,7 @@ use Mist\Core\Model\Model;
  * Blog Model
  *
  * @title Abdul Wahid - awahid@gmail.com
- * @version 0.1
+ * @version 1.0.0
  * @date June 18th, 2015
  */
 
