@@ -36,6 +36,7 @@ class Router {
      * route
      * maps the url to controller and action
      * @param string $url
+     * @return void
      */
     public function route($url) {
         // seperate controller, action and parameters
