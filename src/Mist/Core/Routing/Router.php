@@ -13,28 +13,31 @@ use Mist\Core\Controller\Error;
  * @date June 15th, 2015
  */
 
-class Router
-{
+class Router {
 
     private $path;
     private $controller;
     private $action;
-/**
- * Constructor
- * 
- * @param string $path
- * @param string $controller
- * @param string $action
- */
-    public function __construct($path = 'app', $controller = 'Welcome', $action = 'index')
-    {
+
+    /**
+     * Constructor
+     * 
+     * @param string $path
+     * @param string $controller
+     * @param string $action
+     */
+    public function __construct($path = 'app', $controller = 'Welcome', $action = 'index') {
         $this->path = $path;
         $this->controller = ucfirst($controller);
         $this->action = $action; //case sensitive; should have camelCase
     }
 
-    public function route($url)
-    {
+    /**
+     * route
+     * maps the url to controller and action
+     * @param string $url
+     */
+    public function route($url) {
         // seperate controller, action and parameters
         $urlSegments = explode("/", $url);
 
@@ -52,8 +55,8 @@ class Router
 
         if (is_readable($filePath)) {
             include $filePath;
-            $class = $this->controller."Controller";
-            $controller = new $class($this->controller,$this->action);
+            $class = $this->controller . "Controller";
+            $controller = new $class($this->controller, $this->action);
 
             if (is_callable(array($controller, $this->action))) {
                 $action = $this->action;
@@ -75,7 +78,5 @@ class Router
 
         $controller->$action($params);
     }
-    
-    
-    
+
 }
