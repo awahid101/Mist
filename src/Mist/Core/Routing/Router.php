@@ -51,6 +51,7 @@ class Router {
 
         $params = count($urlSegments) > 2 ? array_slice($urlSegments, 2) : array();
 
+        //todo: modules/components/plugins routes
         $filePath = Configurations::getConf("app")["basePath"] . "/" . $this->path . '/Controller/' . $this->controller . 'Controller.php';
 
         if (is_readable($filePath)) {
