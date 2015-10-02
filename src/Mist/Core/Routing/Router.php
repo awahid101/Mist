@@ -77,7 +77,7 @@ class Router {
             $action = 'index';
             $params['error'] = 'Invalid request : <strong>' . $this->controller . "Controller/" . $this->action . '</strong>';
         }
-
+        //invoke the controller
         $controller->$action($params);
     }
 
