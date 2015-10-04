@@ -59,6 +59,7 @@ class Router {
             include $filePath;
             $class = $this->controller . "Controller";
             $controller = new $class($this->controller, $this->action);
+            
             //is_callable function checks if the class and method is present and we can call it.
             if (is_callable(array($controller, $this->action))) {
                 $action = $this->action;
