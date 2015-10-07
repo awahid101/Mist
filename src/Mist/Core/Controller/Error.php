@@ -29,6 +29,8 @@ class Error extends Controller
         if (!isset($data['error'])) {
             $data['error'] = 'Error: 404 Not Found';
         }
+        
+        //set default error view
         $this->setView('Error/404');
         $data['page_title']= '404 Not Found';        
         $this->setParams('params', $data);    
