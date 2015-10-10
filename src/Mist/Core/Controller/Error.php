@@ -35,6 +35,7 @@ class Error extends Controller
         $data['page_title']= '404 Not Found';   
         //we might send some error message
         $this->setParams('params', $data);    
+        //render the error view
         $this->render();
     }
 }
