@@ -20,6 +20,7 @@ class Error extends Controller
         parent::__construct('Error', 'index');
     }
     /**
+     * index
      * default index function throws a 404 error
      * @param mix array $data 
      * @return void
