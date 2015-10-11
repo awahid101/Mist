@@ -1,16 +1,20 @@
 <?php
+/**
+ * Main Controller
+ * 
+ * All application controller must extent this class.
+ *
+ * @link          https://github.com/awahid101/Mist
+ * @package       Mist.Core.Controller
+ * @author Abdul Wahid - awahid@gmail.com
+ * @version 1.0.0
+ * @date June 15th, 2015
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
 
 namespace Mist\Core\Controller;
 
 use Mist\Core\Template\View;
-
-/*
- * Controller - Application controller
- *
- * @author Abdul Wahid - awahid@gmail.com
- * @version 1.0.0
- * @date June 15th, 2015
- */
 
 abstract class Controller {
 
