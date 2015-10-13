@@ -1,23 +1,38 @@
 <?php
-
+/**
+ * 
+ * Model - Application base Model class
+ *
+ * @link          https://github.com/awahid101/Mist
+ * @package       Mist.Core.Controller
+ * @author Abdul Wahid - awahid@gmail.com
+ * @version 1.0.0
+ * @date June 15th, 2015
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
 namespace Mist\Core\Model;
 
 use Mist\Helpers\Database;
 use Mist\Helpers\Configurations;
 
-/*
- * Model - Application base Model class
- *
- * @author Abdul Wahid - awahid@gmail.com
- * @version 1.0.0
- * @date June 18th, 2015
- */
-
 abstract class Model
 {
-
+    /**
+     *
+     * @var database object 
+     */
     protected $db;
+    
+    /**
+     *
+     * @var string holds the name of the table
+     */
     protected $tableName;
+    
+    /**
+     *
+     * @var string holds the name of the model class for the table
+     */
     protected $modelName;
 
     /**
