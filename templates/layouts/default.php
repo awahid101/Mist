@@ -56,7 +56,7 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="/php-awf/mist/">Home</a></li>
+                        <li class=""><a href="/php-awf/mist/">Home</a></li>
                         <li><a href="/php-awf/mist/welcome/about">About</a></li>
                         <li><a href="/php-awf/mist/welcome/contact">Contact</a></li>            
                         <li class="dropdown">
