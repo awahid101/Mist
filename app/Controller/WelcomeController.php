@@ -23,7 +23,7 @@ class WelcomeController extends Controller
         
         $params = array(
             'message' => 'Welcome! I am alive.',
-            'time' => date('y M, d H:i:s', time())
+            'time' => date('d M, Y H:i:s', time())
         );
         $this->setParams('params', $params);
         $this->render();
@@ -37,7 +37,7 @@ class WelcomeController extends Controller
 
         $params = array(
             'message' => 'Place your intro here.',
-            'time' => date('y M, d H:i:s', time())
+            'time' => date('d M, Y H:i:s', time())
         );
         $this->setParams('params', $params);
         $this->render();
