@@ -1,17 +1,20 @@
 <?php
+/**
+ * Router Class
+ * call relevent controllers and actions
+ *
+ * @link          https://github.com/awahid101/Mist
+ * @package       Mist.Core.Controller
+ * @author Abdul Wahid - awahid@gmail.com
+ * @version 1.0.0
+ * @date June 15th, 2015
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
+ */
 
 namespace Mist\Core\Routing;
 
 use Mist\Helpers\Configurations;
 use Mist\Core\Controller\Error;
-
-/*
- * Router - call relevent controllers and actions
- *
- * @author Abdul Wahid - awahid@gmail.com
- * @version 1.0.0
- * @date June 15th, 2015
- */
 
 class Router {
 
