@@ -36,7 +36,7 @@ class View {
      * Constructor
      * 
      * @param string $controller name of the controller
-     * @param string $action
+     * @param string $action name of the action
      */
     function __construct($controller, $action) {
         $this->controller = lcfirst($controller);
