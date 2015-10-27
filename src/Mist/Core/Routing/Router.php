@@ -18,8 +18,20 @@ use Mist\Core\Controller\Error;
 
 class Router {
 
+    /**
+     *
+     * @var string holds the path of controller 
+     */
     private $path;
+    /**
+     *
+     * @var string holds the controller name
+     */
     private $controller;
+    /**
+     *
+     * @var string holds the name of the action class
+     */
     private $action;
 
     /**
