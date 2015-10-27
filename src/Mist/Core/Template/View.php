@@ -1,4 +1,5 @@
 <?php
+
 /**
  * View Class
  * 
@@ -31,6 +32,12 @@ class View {
     protected $action;
     protected $layout;
 
+    /**
+     * Constructor
+     * 
+     * @param string $controller
+     * @param string $action
+     */
     function __construct($controller, $action) {
         $this->controller = lcfirst($controller);
         $this->action = lcfirst($action);
@@ -75,7 +82,7 @@ class View {
         if (file_exists($basePath . "app/" . $path)) {
             $content = $this->renderContent($basePath . "app/" . $path, $params);
         } else if (file_exists($basePath . $path)) {
-            
+
             $content = $this->renderContent($basePath . $path, $params);
         } else {
             $content = 'Error: View not found: ' . $path;
