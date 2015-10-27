@@ -35,7 +35,7 @@ class View {
     /**
      * Constructor
      * 
-     * @param string $controller
+     * @param string $controller name of the controller
      * @param string $action
      */
     function __construct($controller, $action) {
