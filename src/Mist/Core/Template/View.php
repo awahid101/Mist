@@ -27,6 +27,10 @@ use Mist\Helpers\Configurations;
 
 class View {
 
+    /**
+     *
+     * @var mix
+     */
     protected $params = array();
     protected $controller;
     protected $action;
@@ -78,7 +82,7 @@ class View {
         $path = "templates/views/" . $this->controller . "/" . $this->action . ".php";
         $content = '';
 
-        //overide global view file if a local view is present in app/templates/...  
+        //overide global view file if a local view is present in app/templates
         if (file_exists($basePath . "app/" . $path)) {
             $content = $this->renderContent($basePath . "app/" . $path, $params);
         } else if (file_exists($basePath . $path)) {
