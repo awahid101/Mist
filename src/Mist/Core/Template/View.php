@@ -108,6 +108,13 @@ class View {
         }
     }
 
+    /**
+     * renders the content with given parameters
+     * 
+     * @param string $path
+     * @param array $params
+     * @return void
+     */
     public function renderContent($path, $params) {
         $content = '';
         ob_start();
