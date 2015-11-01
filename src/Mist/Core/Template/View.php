@@ -29,9 +29,10 @@ class View {
 
     /**
      *
-     * @var mix
+     * @var mix holds the parameters set by controller
      */
     protected $params = array();
+    
     protected $controller;
     protected $action;
     protected $layout;
