@@ -22,7 +22,7 @@ class Configurations {
     private static $conf;
 
     /**
-     * 
+     * constructor
      */
     private function __construct() {
         
