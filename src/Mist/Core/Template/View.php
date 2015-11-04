@@ -32,7 +32,10 @@ class View {
      * @var mix holds the parameters set by controller
      */
     protected $params = array();
-    
+    /**
+     *
+     * @var type string holds the controller name
+     */
     protected $controller;
     protected $action;
     protected $layout;
