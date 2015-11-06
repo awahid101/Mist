@@ -42,6 +42,10 @@ class View {
      * @var type string holds the action name
      */
     protected $action;
+    /**
+     *
+     * @var type string holds the layout name
+     */
     protected $layout;
 
     /**
