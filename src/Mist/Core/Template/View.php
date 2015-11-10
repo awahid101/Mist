@@ -71,8 +71,11 @@ class View {
         $this->layout = strtolower($layoutName);
     }
 
-    /*
+    /**
+     * 
      * change the controller view
+     * 
+     * @param string $viewName name of the view to render
      */
 
     public function setView($viewName) {
