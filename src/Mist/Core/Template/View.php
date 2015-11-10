@@ -63,6 +63,10 @@ class View {
         $this->setLayout(Configurations::getConf("app")["layout"]);
     }
 
+    /**
+     * set the layout for this request/view
+     * @param string $layoutName 
+     */
     public function setLayout($layoutName) {
         $this->layout = strtolower($layoutName);
     }
