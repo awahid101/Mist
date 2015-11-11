@@ -90,6 +90,8 @@ class View {
 
     /*
      *  set the Parameters that are accessible in view
+     * @param string $name 
+     * @value string $value
      */
 
     function set($name, $value) {
