@@ -97,7 +97,9 @@ class View {
     function set($name, $value) {
         $this->params[$name] = $value;
     }
-
+    /**
+     * renders the view - parses the HTML
+     */
     function render() {
         //extracts all the parameters
         extract($this->params);
