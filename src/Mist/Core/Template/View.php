@@ -143,10 +143,12 @@ class View {
      */
     public function renderContent($path, $params) {
         $content = '';
+        
         ob_start();
         include $path;
         $content = ob_get_contents();
         ob_end_clean();
+        
         return $content;
     }
 
