@@ -97,6 +97,7 @@ class View {
     function set($name, $value) {
         $this->params[$name] = $value;
     }
+    
     /**
      * renders the view - parses the HTML
      */
@@ -137,8 +138,8 @@ class View {
     /**
      * renders the content with given parameters
      * 
-     * @param string $path
-     * @param array $params
+     * @param string $path complete path of the php file to render
+     * @param array $params 
      * @return void
      */
     public function renderContent($path, $params) {
