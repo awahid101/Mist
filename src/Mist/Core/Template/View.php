@@ -150,7 +150,7 @@ class View {
         include $path;
         $content = ob_get_contents();
         ob_end_clean();
-        
+        //content holds the parsed variables and html
         return $content;
     }
 
