@@ -145,6 +145,7 @@ class View {
     public function renderContent($path, $params) {
         $content = '';
         
+        //buffer output
         ob_start();
         include $path;
         $content = ob_get_contents();
