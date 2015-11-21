@@ -29,7 +29,7 @@ class Configurations {
     }
 
     /**
-     * 
+     * clone
      */
     private function __clone() {
         
