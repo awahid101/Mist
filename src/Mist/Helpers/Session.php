@@ -1,4 +1,5 @@
 <?php
+
 namespace Mist\Helpers;
 
 use Mist\Helpers\Configurations;
@@ -8,8 +9,8 @@ use Mist\Helpers\Configurations;
  * @version 1.0.0
  * @date June 18, 2015
  */
-class Session
-{
+
+class Session {
 
     /**
      * Determine if session has started
@@ -24,8 +25,7 @@ class Session
      * 
      * @return void
      */
-    public static function init()
-    {
+    public static function init() {
         if (self::$sessionStarted == false) {
             session_name(Configurations::getConf('session')['sessionPrefix']);
             session_start();
@@ -42,18 +42,17 @@ class Session
      * 
      * @return void
      */
-    public static function set($key, $value = false)
-    {
+    public static function set($key, $value = false) {
         /**
-        * Check whether session is set in array or not
-        * If array then set all session key-values in foreach loop
-        */
+         * Check whether session is set in array or not
+         * If array then set all session key-values in foreach loop
+         */
         if (is_array($key) && $value === false) {
             foreach ($key as $name => $value) {
-                $_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$name] = $value;
+                $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $name] = $value;
             }
         } else {
-            $_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key] = $value;
+            $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key] = $value;
         }
     }
 
@@ -62,10 +61,9 @@ class Session
      * @param  string $key item to extract
      * @return string      return item
      */
-    public static function pull($key)
-    {
-        $value = $_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key];
-        unset($_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key]);
+    public static function pull($key) {
+        $value = $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key];
+        unset($_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key]);
         return $value;
     }
 
@@ -76,15 +74,14 @@ class Session
      * @param  boolean $secondkey if used then use as a second key
      * @return string             returns the key
      */
-    public static function get($key, $secondkey = false)
-    {
+    public static function get($key, $secondkey = false) {
         if ($secondkey == true) {
-            if (isset($_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key][$secondkey])) {
-                return $_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key][$secondkey];
+            if (isset($_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key][$secondkey])) {
+                return $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key][$secondkey];
             }
         } else {
-            if (isset($_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key])) {
-                return $_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key];
+            if (isset($_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key])) {
+                return $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key];
             }
         }
         return false;
@@ -93,8 +90,7 @@ class Session
     /**
      * @return string with the session id.
      */
-    public static function getSessionId()
-    {
+    public static function getSessionId() {
         return session_id();
     }
 
@@ -102,8 +98,7 @@ class Session
      * regenerate session_id
      * @return string session_id
      */
-    public static function regenerate()
-    {
+    public static function regenerate() {
         session_regenerate_id(true);
         return session_id();
     }
@@ -112,8 +107,7 @@ class Session
      * return the session array
      * @return array of session indexes
      */
-    public static function display()
-    {
+    public static function display() {
         return $_SESSION;
     }
 
@@ -122,31 +116,31 @@ class Session
      * 
      * @return void
      */
-    public static function destroy($key = '')
-    {
+    public static function destroy($key = '') {
         if (self::$sessionStarted == true) {
             if (empty($key)) {
                 session_unset();
                 session_destroy();
             } else {
-                unset($_SESSION[Configurations::getConf('session')['sessionPrefix']."_".$key]);
+                unset($_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key]);
             }
         }
     }
-/**
- * static function message
- *  * 
- * @param string $sessionName pull the session
- * @return string or void
- */
-    public static function message($sessionName = 'success')
-    {
+
+    /**
+     * static function message
+     *  * 
+     * @param string $sessionName pull the session
+     * @return string or void
+     */
+    public static function message($sessionName = 'success') {
         $msg = Session::pull($sessionName);
         if (!empty($msg)) {
             return "<div class='alert alert-success alert-dismissable'>
                     <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>×</button>
-                    <h4><i class='fa fa-check'></i> ".$msg."</h4>
+                    <h4><i class='fa fa-check'></i> " . $msg . "</h4>
                   </div>";
         }
     }
+
 }
