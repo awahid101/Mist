@@ -49,6 +49,7 @@ class Database extends PDO
                 die("Cannot connect to Database");
             }
         }
+        //return instance
         return self::$instance;
     }
 }
