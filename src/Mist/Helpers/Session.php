@@ -59,7 +59,7 @@ class Session {
     /**
      * extract item from session then delete from the session, finally return the item
      * @param  string $key item to extract
-     * @return string      return item
+     * @return string return item
      */
     public static function pull($key) {
         $value = $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key];
