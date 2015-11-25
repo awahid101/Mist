@@ -2,6 +2,7 @@
 Experimental mvc based php framework
 
 #TODO List
-upload demo
-improve the framework for php7
+Upload demo
+Add RESTful routing
+Improve the framework for php7
 
