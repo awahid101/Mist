@@ -1,14 +1,14 @@
 <?php
-
-namespace Mist\Helpers;
-
-use Mist\Helpers\Configurations;
-
 /*
  * @author Abdul Wahid - awahid@gmail.com
  * @version 1.0.0
  * @date June 18, 2015
  */
+
+namespace Mist\Helpers;
+
+use Mist\Helpers\Configurations;
+
 
 class Session {
 
@@ -59,7 +59,7 @@ class Session {
     /**
      * extract item from session then delete from the session, finally return the item
      * @param  string $key item to extract
-     * @return string return item
+     * @return string      return item
      */
     public static function pull($key) {
         $value = $_SESSION[Configurations::getConf('session')['sessionPrefix'] . "_" . $key];
