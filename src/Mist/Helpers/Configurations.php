@@ -5,6 +5,8 @@ namespace Mist\Helpers;
 /*
  * Configurations - application environment configurations
  *
+ * Implements the singleton pattern
+ * 
  * @author Abdul Wahid - awahid@gmail.com
  * @version 1.0.0
  * @date June 15th, 2015
