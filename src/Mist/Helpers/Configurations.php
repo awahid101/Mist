@@ -1,7 +1,5 @@
 <?php
 
-namespace Mist\Helpers;
-
 /*
  * Configurations - application environment configurations
  *
@@ -11,6 +9,7 @@ namespace Mist\Helpers;
  * @version 1.0.0
  * @date June 15th, 2015
  */
+namespace Mist\Helpers;
 
 class Configurations {
 
