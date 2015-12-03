@@ -9,6 +9,10 @@
 
 use Mist\Core\Controller\Controller;
 
+/**
+ * Sample Welcome Controller
+ */
+
 class WelcomeController extends Controller
 {
 
