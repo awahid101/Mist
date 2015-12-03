@@ -1,7 +1,4 @@
 <?php
-
-use Mist\Core\Controller\Controller;
-
 /*
  * Welcome Controller 
  *
@@ -9,6 +6,8 @@ use Mist\Core\Controller\Controller;
  * @version 1.0.0
  * @date June 15th, 2015
  */
+
+use Mist\Core\Controller\Controller;
 
 class WelcomeController extends Controller
 {
