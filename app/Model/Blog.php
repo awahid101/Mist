@@ -15,7 +15,12 @@ class Blog extends Model
 
     // we define 3 attributes
     // they are public so that we can access them using $post->title directly
+    /**
+     *
+     * @var int id
+     */
     public $id;
+    
     public $title;
     public $content;
 
