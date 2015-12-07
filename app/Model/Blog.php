@@ -20,7 +20,10 @@ class Blog extends Model
      * @var int id
      */
     public $id;
-    
+    /**
+     *
+     * @var string title
+     */
     public $title;
     public $content;
 
