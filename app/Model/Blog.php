@@ -25,6 +25,10 @@ class Blog extends Model
      * @var string title
      */
     public $title;
+    /**
+     *
+     * @var string content
+     */
     public $content;
 
     public function __construct() 
