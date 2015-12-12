@@ -10,7 +10,7 @@
 use Mist\Core\Controller\Controller;
 
 /**
- * Sample Welcome Controller for the mist frame work
+ * Sample Welcome Controller for the mist framework
  */
 
 class WelcomeController extends Controller
