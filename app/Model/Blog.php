@@ -31,6 +31,9 @@ class Blog extends Model
      */
     public $content;
 
+    /**
+     * constructor
+     */
     public function __construct() 
     {
         parent::__construct('Blog');
