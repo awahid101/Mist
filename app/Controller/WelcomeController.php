@@ -21,9 +21,7 @@ class WelcomeController extends Controller
      * Use default templates and views from config file
      */
     public function index()
-    {
-        //
-        
+    {   
         $params = array(
             'message' => 'Welcome! I am alive.',
             'time' => date('d M, Y H:i:s', time())
