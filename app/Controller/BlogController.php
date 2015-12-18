@@ -27,6 +27,8 @@ class BlogController extends Controller
     }
     /*
      * View specific post
+     * 
+     * @param array $query
      */
     public function view($query)
     {
