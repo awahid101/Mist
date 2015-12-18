@@ -28,7 +28,7 @@ class BlogController extends Controller
     /*
      * View specific post
      * 
-     * @param array $query
+     * @param array $query holds paramters given by users
      */
     public function view($query)
     {
