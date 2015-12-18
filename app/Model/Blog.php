@@ -13,8 +13,6 @@ use Mist\Core\Model\Model;
 class Blog extends Model
 {
 
-    // we define 3 attributes
-    // they are public so that we can access them using $post->title directly
     /**
      *
      * @var int id
