@@ -26,7 +26,7 @@ class BlogController extends Controller
         $this->render();
     }
     /*
-     * View specific post
+     * View specific blog post
      * 
      * @param array $query holds paramters given by users
      */
