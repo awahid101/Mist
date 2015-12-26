@@ -36,6 +36,7 @@ class BlogController extends Controller
         $params = array(
             'blog' => $blog->find($query[0])
         );
+        
         $this->setParams('params', $params);
         $this->render();
     }
