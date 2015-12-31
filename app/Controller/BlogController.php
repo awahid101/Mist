@@ -16,6 +16,7 @@ class BlogController extends Controller
      * Index action
      * Show all blog posts
      */
+    
     public function index()
     {
         $blog = new Blog();
