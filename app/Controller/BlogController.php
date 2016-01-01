@@ -26,6 +26,7 @@ class BlogController extends Controller
         $this->setParams('params', $params);
         $this->render();
     }
+    
     /*
      * View a specific blog post
      * 
