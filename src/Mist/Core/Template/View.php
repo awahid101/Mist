@@ -131,7 +131,7 @@ class View {
         } else if (file_exists($basePath . $path)) {
             include $basePath . $path;
         } else {
-            die('Error: Cannot find the Layout: ' . $path);
+            die('Error: Cannot find the Layout: ' . $basePath . $path);
         }
     }
 
