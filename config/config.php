@@ -11,7 +11,7 @@
 //inspired from yiiframework
 $config['app'] = array(
     'name' => 'Mist',
-    'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..\\',
+    'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..'.DIRECTORY_SEPARATOR,
     'timezone' => 'Pacific/Auckland', //default
     'layout' => 'default',
     'env' => 'dev' //prod, test
