@@ -1,4 +1,6 @@
 # Mist
+
+[![Join the chat at https://gitter.im/awahid101/Mist](https://badges.gitter.im/awahid101/Mist.svg)](https://gitter.im/awahid101/Mist?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Experimental MVC based php framework
 
 # Sample Blog
