@@ -5,7 +5,7 @@ Experimental MVC based php framework
 
 # Sample Blog
 
-create a database name db_mist and run the following sql file
+Create a database name db_mist and run the following sql file
 
 ```sql
 CREATE TABLE `db_mist`.`blog` (
