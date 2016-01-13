@@ -42,4 +42,14 @@ class BlogController extends Controller
         $this->setParams('params', $params);
         $this->render();
     }
+    
+    /*
+     * Create a new blog post
+     * 
+     * @param array $query holds paramters given by users
+     */
+    public function create($query)
+    {
+        //TODO
+    }
 }
