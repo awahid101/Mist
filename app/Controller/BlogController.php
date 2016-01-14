@@ -50,6 +50,10 @@ class BlogController extends Controller
      */
     public function create($query)
     {
-        //TODO
+        if($_SERVER['REQUEST_METHOD'] === 'POST')
+        {
+            return $this->_edit();
+        }
+        $this->render();
     }
 }
