@@ -52,8 +52,16 @@ class BlogController extends Controller
     {
         if($_SERVER['REQUEST_METHOD'] === 'POST')
         {
-            return $this->_edit();
+            return $this->update();
         }
         $this->render();
     }
+    /**
+     * update a new blog post
+     */
+    public function update(){
+        
+    }
+    
 }
+
