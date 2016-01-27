@@ -52,15 +52,21 @@ class BlogController extends Controller
     {
         if($_SERVER['REQUEST_METHOD'] === 'POST')
         {
-            return $this->update();
+            $blog = new Blog();
+            
+            if(isset($_POST['id']))
+                $blog = $blog->findModel($_POST['id']);
+            
+            return $this->update($id);
         }
         $this->render();
     }
     /**
      * update a new blog post
      */
-    public function update(){
-        
+    public function update($id){
+       //get form detailss
+       
     }
     
 }
