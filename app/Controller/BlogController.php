@@ -50,22 +50,34 @@ class BlogController extends Controller
      */
     public function create($query)
     {
+        $params = array(
+            'message' => null
+        );
+        
         if($_SERVER['REQUEST_METHOD'] === 'POST')
-        {
-            $blog = new Blog();
+        {  
+            $blog = new Blog(); 
+            $blog->setFields($_POST);
+            if($blog->add()){
+                $params['message'] = 'Record added successfully';
+            }
+            else{
+                $params['message'] = 'Request was not successfull. Please try again';
+                $params['error'] = true
+            }
             
-            if(isset($_POST['id']))
-                $blog = $blog->findModel($_POST['id']);
-            
-            return $this->update($id);
         }
+        $this->setParams('params', $params);
         $this->render();
     }
     /**
      * update a new blog post
      */
     public function update($id){
-       //get form detailss
+       //get form details
+        $blog = new Blog();    
+        if(isset($_POST['id']))
+            $blog = $blog->findModel($_POST['id']);
        
     }
     
