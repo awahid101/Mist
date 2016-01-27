@@ -63,7 +63,7 @@ class BlogController extends Controller
             }
             else{
                 $params['message'] = 'Request was not successfull. Please try again';
-                $params['error'] = true
+                $params['error'] = true;
             }
             
         }
