@@ -77,6 +77,7 @@ class BlogController extends Controller
        //get form details
         $blog = new Blog();    
         if(isset($_POST['id']))
+            //update record
             $blog = $blog->findModel($_POST['id']);
        
     }
