@@ -79,7 +79,14 @@ class BlogController extends Controller
         if(isset($_POST['id']))
             //update record
             $blog = $blog->findModel($_POST['id']);
-       
+            $blog->setFields($_POST);
+            if($blog->save()){
+                $params['message'] = 'Record updated successfully';
+            }
+            else{
+                $params['message'] = 'Request was not successfull. Please try again';
+                $params['error'] = true;
+            }
     }
     
 }
