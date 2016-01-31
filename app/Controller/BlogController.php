@@ -76,7 +76,7 @@ class BlogController extends Controller
     public function update($id){
        //get form details
         $blog = new Blog();    
-        if(isset($_POST['id']))
+        if(isset($_POST['id'])){
             //update record
             $blog = $blog->findModel($_POST['id']);
             $blog->setFields($_POST);
@@ -87,6 +87,7 @@ class BlogController extends Controller
                 $params['message'] = 'Request was not successfull. Please try again';
                 $params['error'] = true;
             }
+        }
     }
     
 }
