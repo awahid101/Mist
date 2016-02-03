@@ -88,8 +88,17 @@ class BlogController extends Controller
                 $params['error'] = true;
             }
         }
+        //
         $this->setParams('params', $params);
         $this->render();
+    }
+    
+    /**
+     * delete blog
+     * @param type $id
+     */
+    public function delete($id){
+        
     }
     
 }
