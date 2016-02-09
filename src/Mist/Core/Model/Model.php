@@ -81,5 +81,13 @@ abstract class Model
         $stmt->execute(array('id' => $id));
         return $stmt->fetch();
     }
+    
+    /**
+     * 
+     * @param type $attributes
+     */
+    public function setFields($attributes){
+        
+    }
 
 }
