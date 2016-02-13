@@ -37,5 +37,13 @@ class Blog extends Model
     {
         parent::__construct('Blog');
     }
+    
+    /**
+     * 
+     * @param type $attributes
+     */
+    public function setFields($attributes) {
+        parent::setFields($attributes);
+    }
 
 }
