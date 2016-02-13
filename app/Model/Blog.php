@@ -43,7 +43,7 @@ class Blog extends Model
      * @param type $attributes
      */
     public function setFields($attributes) {
-        parent::setFields($attributes);
+        
     }
 
 }
