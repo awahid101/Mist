@@ -98,7 +98,8 @@ class BlogController extends Controller
      * @param type $id
      */
     public function delete($id){
-        
+        $blog = $blog->findModel($_POST['id']);
+        $blog->delete();
     }
     
 }
