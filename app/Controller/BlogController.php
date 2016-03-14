@@ -103,6 +103,9 @@ class BlogController extends Controller
             if($blog)
                 $blog->delete();
         }
+        else{
+            return false;
+        }
      }
     
 }
