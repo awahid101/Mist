@@ -102,6 +102,8 @@ class BlogController extends Controller
             $blog = $blog->findModel($id);
             if($blog)
                 $blog->delete();
+            else
+                return false;
         }
         else{
             return false;
